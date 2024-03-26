@@ -1,6 +1,8 @@
-﻿namespace Conversate.Infrastructure
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+
+namespace Conversate.Infrastructure
 {
-    public class Class1
+    public class ApplicationDbContext : IdentityDbContext
     {
 
     }

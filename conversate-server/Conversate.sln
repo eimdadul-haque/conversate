@@ -3,7 +3,43 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34714.143
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conversate.Domain", "src\Conversate.Domain\Conversate.Domain.csproj", "{418E0589-CC7C-4346-BB65-671C22AD03C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conversate.Application", "src\Conversate.Application\Conversate.Application.csproj", "{27ADCB1A-9921-4806-A86F-29331865FEBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conversate.Infrastructure", "src\Conversate.Infrastructure\Conversate.Infrastructure.csproj", "{06138A6A-2F30-47E0-BE7E-351285DDD6EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conversate.Api", "src\Conversate.Api\Conversate.Api.csproj", "{75ABE95F-0753-48A7-9598-10F7E7DE7404}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conversate.Shared", "src\Conversate.Shared\Conversate.Shared.csproj", "{DF8B4A7B-BEA3-4212-9DC8-DBF6B40BA584}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{418E0589-CC7C-4346-BB65-671C22AD03C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{418E0589-CC7C-4346-BB65-671C22AD03C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{418E0589-CC7C-4346-BB65-671C22AD03C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{418E0589-CC7C-4346-BB65-671C22AD03C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27ADCB1A-9921-4806-A86F-29331865FEBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27ADCB1A-9921-4806-A86F-29331865FEBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27ADCB1A-9921-4806-A86F-29331865FEBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27ADCB1A-9921-4806-A86F-29331865FEBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06138A6A-2F30-47E0-BE7E-351285DDD6EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06138A6A-2F30-47E0-BE7E-351285DDD6EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06138A6A-2F30-47E0-BE7E-351285DDD6EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06138A6A-2F30-47E0-BE7E-351285DDD6EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75ABE95F-0753-48A7-9598-10F7E7DE7404}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75ABE95F-0753-48A7-9598-10F7E7DE7404}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75ABE95F-0753-48A7-9598-10F7E7DE7404}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75ABE95F-0753-48A7-9598-10F7E7DE7404}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF8B4A7B-BEA3-4212-9DC8-DBF6B40BA584}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF8B4A7B-BEA3-4212-9DC8-DBF6B40BA584}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF8B4A7B-BEA3-4212-9DC8-DBF6B40BA584}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF8B4A7B-BEA3-4212-9DC8-DBF6B40BA584}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
