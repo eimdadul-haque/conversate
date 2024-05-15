@@ -47,10 +47,10 @@ namespace Conversate.Application.Accounts
         public async Task<string> Login(LoginDto input)
         {
             var result = await _signInManager
-                .PasswordSignInAsync(input.Email, input.Password, input.IsPersistent, false);
+                .PasswordSignInAsync(input.UserName, input.Password, input.IsPersistent, false);
             
             if (result.Succeeded)
-               return GenerateJwtToken(input.Email);
+               return GenerateJwtToken(input.UserName);
             else 
                 return string.Empty;
         }
