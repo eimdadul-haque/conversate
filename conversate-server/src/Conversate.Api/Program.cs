@@ -93,7 +93,7 @@ builder.Services.AddCors(option =>
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-
+app.UseCors();
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.UseSwagger();
@@ -109,6 +109,6 @@ app.UseEndpoints(endpoints =>
 });
 
 app.MapControllers();
-app.UseCors();
+
 
 app.Run();

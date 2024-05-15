@@ -24,7 +24,7 @@ namespace Conversate.Api.Controllers
             var token = await _account.Login(input);
 
             if (!string.IsNullOrEmpty(token))
-                return Ok(token);
+                return Ok(new { userName = input.UserName, token = token });
             else
                 return BadRequest();
         }

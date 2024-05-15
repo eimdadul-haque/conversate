@@ -34,7 +34,7 @@ namespace Conversate.Application.Accounts
             {
                 Name = input.Name,
                 Email = input.Email,
-                UserName = input.Username,
+                UserName = input.Email,
                 PhoneNumber = input.PhoneNumber
             };
 

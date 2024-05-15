@@ -1,8 +1,10 @@
 ﻿using Microsoft.AspNetCore.SignalR;
 using Conversate.Application.Dtos.Messages;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Conversate.Application.Hubs.MessageHub
 {
+    [Authorize]
     public class MessageHub : Hub
     {
         public async Task SendMessageToAll(MessageDto message)
