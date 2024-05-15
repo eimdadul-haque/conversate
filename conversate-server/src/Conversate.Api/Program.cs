@@ -62,19 +62,19 @@ builder.Services.AddAuthentication(options =>
         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["JWT:IssuerSigningKey"]))
     };
 
-    //option.Events = new JwtBearerEvents()
-    //{
-    //    OnMessageReceived = (context) =>
-    //    {
-    //        var access_token = context.Request.Query["access_token"];
-    //        var path = context.HttpContext.Request.Path;
+    option.Events = new JwtBearerEvents()
+    {
+        OnMessageReceived = (context) =>
+        {
+            var access_token = context.Request.Query["access_token"];
+            var path = context.HttpContext.Request.Path;
 
-    //        if(!string.IsNullOrEmpty(access_token) && (path.StartsWithSegments("/message")))
-    //            context.Token = access_token;
+            if (!string.IsNullOrEmpty(access_token) && (path.StartsWithSegments("/message")))
+                context.Token = access_token;
 
-    //        return Task.CompletedTask;
-    //    }
-    //};
+            return Task.CompletedTask;
+        }
+    };
 });
 
 builder.Services.AddTransient<IAccount, Account>();
