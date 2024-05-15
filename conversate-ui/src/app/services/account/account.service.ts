@@ -1,20 +1,23 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Login } from 'src/app/models/account.model';
 import { baseUrl } from 'src/environments/environments';
+import { Login } from 'src/app/models/account.model';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root',
 })
 export class AccountService {
-  constructor(private httpClient: HttpClient) {}
+  constructor(
+    private httpClient: HttpClient,
+    private router: Router) {}
 
   login(login: Login): void {
-    
     const successCallback = (response: any) => {
-      const token = response;
+      const token = response.token;
       if(token) {
         localStorage.setItem('token', token);
+        this.router.navigateByUrl('/page/message')
       }
     };
 
